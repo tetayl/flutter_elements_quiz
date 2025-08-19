@@ -4,7 +4,7 @@ Yksinkertainen Flutter web -sovellus kahdella harjoituksella
 - Näytetään lyhenne - valitse oikea nimi
 - Näytetään nimi - valitse oikea lyhenne
 
-Kumpikin käyttää samaa JSON-dataa `assets/elements.json`. Oletuksena mukana 36 ensimmäistä alkuainetta.
+Kumpikin käyttää samaa JSON-dataa `assets/elements.json`. Oletuksena mukana kaikki alkuaineet.
 
 ## Kehitys
 
@@ -26,4 +26,4 @@ Buildin jälkeen hakemistossa `build/web` on staattiset tiedostot.
 
 ## Julkaisu GitHub Pagesiin
 
-Tämä projekti toimii GitHub Pagesissa. Tarvitset vain `build/web` -kansion sisällön. Ohjeet annetaan keskustelussa.
+Tämä projekti toimii GitHub Pagesissa. Tarvitset vain `build/web` -kansion sisällön. 
