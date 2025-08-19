@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Vety",
+    "symbol": "H",
+    "valenssielektronit": 1,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Helium",
+    "symbol": "He",
+    "valenssielektronit": 2,
+    "luokka": "jalokaasu"
+  },
+  {
+    "name": "Litium",
+    "symbol": "Li",
+    "valenssielektronit": 1,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Beryllium",
+    "symbol": "Be",
+    "valenssielektronit": 2,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Boori",
+    "symbol": "B",
+    "valenssielektronit": 3,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Hiili",
+    "symbol": "C",
+    "valenssielektronit": 4,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Typpi",
+    "symbol": "N",
+    "valenssielektronit": 5,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Happi",
+    "symbol": "O",
+    "valenssielektronit": 6,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Fluori",
+    "symbol": "F",
+    "valenssielektronit": 7,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Neoni",
+    "symbol": "Ne",
+    "valenssielektronit": 8,
+    "luokka": "jalokaasu"
+  },
+  {
+    "name": "Natrium",
+    "symbol": "Na",
+    "valenssielektronit": 1,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Magnesium",
+    "symbol": "Mg",
+    "valenssielektronit": 2,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Alumiini",
+    "symbol": "Al",
+    "valenssielektronit": 3,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Pi",
+    "symbol": "Si",
+    "valenssielektronit": 4,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Fosfori",
+    "symbol": "P",
+    "valenssielektronit": 5,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Rikki",
+    "symbol": "S",
+    "valenssielektronit": 6,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Kloori",
+    "symbol": "Cl",
+    "valenssielektronit": 7,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Argon",
+    "symbol": "Ar",
+    "valenssielektronit": 8,
+    "luokka": "jalokaasu"
+  },
+  {
+    "name": "Kalium",
+    "symbol": "K",
+    "valenssielektronit": 1,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Kalsium",
+    "symbol": "Ca",
+    "valenssielektronit": 2,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Skandium",
+    "symbol": "Sc",
+    "valenssielektronit": 3,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Titaani",
+    "symbol": "Ti",
+    "valenssielektronit": 4,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Vanadiini",
+    "symbol": "V",
+    "valenssielektronit": 5,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Kromi",
+    "symbol": "Cr",
+    "valenssielektronit": 6,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Mangaani",
+    "symbol": "Mn",
+    "valenssielektronit": 7,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Rauta",
+    "symbol": "Fe",
+    "valenssielektronit": 8,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Kobaltti",
+    "symbol": "Co",
+    "valenssielektronit": 9,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Nikkeli",
+    "symbol": "Ni",
+    "valenssielektronit": 10,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Kupari",
+    "symbol": "Cu",
+    "valenssielektronit": 11,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Sinkki",
+    "symbol": "Zn",
+    "valenssielektronit": 12,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Gallium",
+    "symbol": "Ga",
+    "valenssielektronit": 3,
+    "luokka": "metalli"
+  },
+  {
+    "name": "Germanium",
+    "symbol": "Ge",
+    "valenssielektronit": 4,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Arseeni",
+    "symbol": "As",
+    "valenssielektronit": 5,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Seleeni",
+    "symbol": "Se",
+    "valenssielektronit": 6,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Bromi",
+    "symbol": "Br",
+    "valenssielektronit": 7,
+    "luokka": "epämetalli"
+  },
+  {
+    "name": "Krypton",
+    "symbol": "Kr",
+    "valenssielektronit": 8,
+    "luokka": "jalokaasu"
+  }
+]
