@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Hydrogen",
+    "symbol": "H"
+  },
+  {
+    "name": "Helium",
+    "symbol": "He"
+  },
+  {
+    "name": "Lithium",
+    "symbol": "Li"
+  },
+  {
+    "name": "Beryllium",
+    "symbol": "Be"
+  },
+  {
+    "name": "Boron",
+    "symbol": "B"
+  },
+  {
+    "name": "Carbon",
+    "symbol": "C"
+  },
+  {
+    "name": "Nitrogen",
+    "symbol": "N"
+  },
+  {
+    "name": "Oxygen",
+    "symbol": "O"
+  },
+  {
+    "name": "Fluorine",
+    "symbol": "F"
+  },
+  {
+    "name": "Neon",
+    "symbol": "Ne"
+  },
+  {
+    "name": "Sodium",
+    "symbol": "Na"
+  },
+  {
+    "name": "Magnesium",
+    "symbol": "Mg"
+  },
+  {
+    "name": "Aluminum",
+    "symbol": "Al"
+  },
+  {
+    "name": "Silicon",
+    "symbol": "Si"
+  },
+  {
+    "name": "Phosphorus",
+    "symbol": "P"
+  },
+  {
+    "name": "Sulfur",
+    "symbol": "S"
+  },
+  {
+    "name": "Chlorine",
+    "symbol": "Cl"
+  },
+  {
+    "name": "Argon",
+    "symbol": "Ar"
+  },
+  {
+    "name": "Potassium",
+    "symbol": "K"
+  },
+  {
+    "name": "Calcium",
+    "symbol": "Ca"
+  },
+  {
+    "name": "Scandium",
+    "symbol": "Sc"
+  },
+  {
+    "name": "Titanium",
+    "symbol": "Ti"
+  },
+  {
+    "name": "Vanadium",
+    "symbol": "V"
+  },
+  {
+    "name": "Chromium",
+    "symbol": "Cr"
+  },
+  {
+    "name": "Manganese",
+    "symbol": "Mn"
+  },
+  {
+    "name": "Iron",
+    "symbol": "Fe"
+  },
+  {
+    "name": "Cobalt",
+    "symbol": "Co"
+  },
+  {
+    "name": "Nickel",
+    "symbol": "Ni"
+  },
+  {
+    "name": "Copper",
+    "symbol": "Cu"
+  },
+  {
+    "name": "Zinc",
+    "symbol": "Zn"
+  },
+  {
+    "name": "Gallium",
+    "symbol": "Ga"
+  },
+  {
+    "name": "Germanium",
+    "symbol": "Ge"
+  },
+  {
+    "name": "Arsenic",
+    "symbol": "As"
+  },
+  {
+    "name": "Selenium",
+    "symbol": "Se"
+  },
+  {
+    "name": "Bromine",
+    "symbol": "Br"
+  },
+  {
+    "name": "Krypton",
+    "symbol": "Kr"
+  }
+]
