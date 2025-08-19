@@ -155,6 +155,13 @@ class _QuizScreenState extends State<QuizScreen> {
   bool _locked = false;
   int? _selected;
 
+  // lisätty: väärin vastatut ja kertaus-tila
+  final List<ElementItem> _wrongItems = [];
+  bool _inReview = false;
+
+  // lisätty: talletetaan pääkierroksen tulos
+  int _firstRoundCorrect = 0;
+
   @override
   void initState() {
     super.initState();
@@ -162,7 +169,6 @@ class _QuizScreenState extends State<QuizScreen> {
     _pool = List<ElementItem>.from(widget.items);
     _pool.shuffle(_rng);
     if (_pool.length < totalQuestions) {
-      // If data is smaller than 20, we cycle to reach 20.
       while (_pool.length < totalQuestions) {
         _pool.addAll(widget.items);
       }
@@ -172,7 +178,6 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   _Q _makeQuestion(ElementItem correct) {
-    // pick two unique distractors
     final candidates = List<ElementItem>.from(widget.items);
     candidates.removeWhere((x) => x.symbol == correct.symbol);
     candidates.shuffle(_rng);
@@ -192,7 +197,12 @@ class _QuizScreenState extends State<QuizScreen> {
     options.shuffle(_rng);
     correctIndex = options.indexOf(
         widget.mode == QuizMode.symbolToName ? correct.name : correct.symbol);
-    return _Q(prompt: prompt, options: options, correctIndex: correctIndex);
+    return _Q(
+      prompt: prompt,
+      options: options,
+      correctIndex: correctIndex,
+      element: correct,
+    );
   }
 
   void _choose(int i) {
@@ -200,19 +210,58 @@ class _QuizScreenState extends State<QuizScreen> {
     setState(() {
       _selected = i;
       _locked = true;
-      if (i == _questions[_index].correctIndex) _correct++;
+      final q = _questions[_index];
+      final isRight = i == q.correctIndex;
+
+      if (!_inReview && isRight) {
+        _correct++;
+      }
+      if (!_inReview && !isRight) {
+        if (!_wrongItems.any((e) => e.symbol == q.element.symbol)) {
+          _wrongItems.add(q.element);
+        }
+      }
     });
   }
 
   void _next() {
     if (_index + 1 >= _questions.length) {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (_) =>
-                ResultScreen(total: _questions.length, correct: _correct),
-          ));
-      return;
+      if (!_inReview) {
+        // pääkierros loppu
+        _firstRoundCorrect = _correct; // talteen tulos
+        if (_wrongItems.isNotEmpty) {
+          setState(() {
+            _inReview = true;
+            _questions = _wrongItems.map((e) => _makeQuestion(e)).toList();
+            _index = 0;
+            _locked = false;
+            _selected = null;
+            _wrongItems.clear();
+          });
+          return;
+        } else {
+          Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ResultScreen(
+                  total: totalQuestions,
+                  correct: _firstRoundCorrect,
+                ),
+              ));
+          return;
+        }
+      } else {
+        // kertaus loppu -> näytä pääkierroksen tulos
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (_) => ResultScreen(
+                total: totalQuestions,
+                correct: _firstRoundCorrect,
+              ),
+            ));
+        return;
+      }
     }
     setState(() {
       _index++;
@@ -311,7 +360,14 @@ class _Q {
   final String prompt;
   final List<String> options;
   final int correctIndex;
-  _Q({required this.prompt, required this.options, required this.correctIndex});
+  final ElementItem element;
+
+  _Q({
+    required this.prompt,
+    required this.options,
+    required this.correctIndex,
+    required this.element,
+  });
 }
 
 class ResultScreen extends StatelessWidget {
